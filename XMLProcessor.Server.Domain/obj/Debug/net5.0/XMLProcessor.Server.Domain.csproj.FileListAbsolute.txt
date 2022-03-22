@@ -1,0 +1,12 @@
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\bin\Debug\net5.0\XMLProcessor.Server.Domain.deps.json
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\bin\Debug\net5.0\XMLProcessor.Server.Domain.dll
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\bin\Debug\net5.0\ref\XMLProcessor.Server.Domain.dll
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\bin\Debug\net5.0\XMLProcessor.Server.Domain.pdb
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.csproj.AssemblyReference.cache
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.AssemblyInfoInputs.cache
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.AssemblyInfo.cs
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.csproj.CoreCompileInputs.cache
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.dll
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\ref\XMLProcessor.Server.Domain.dll
+D:\Work\Congree\XMLProcessor\XMLProcessor.Server.Domain\obj\Debug\net5.0\XMLProcessor.Server.Domain.pdb
