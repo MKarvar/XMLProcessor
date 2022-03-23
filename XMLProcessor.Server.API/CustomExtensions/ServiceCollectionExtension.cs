@@ -17,7 +17,7 @@ namespace XMLProcessor.Server.API.CustomExtensions
                     Version = "v1",
                     Description = "The XML Processing Service HTTP API",
                 });
-                c.IncludeXmlComments(string.Format(@"{0}\SampleContent.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+                c.IncludeXmlComments(string.Format(@"{0}\Comments.xml", System.AppDomain.CurrentDomain.BaseDirectory));
             });
 
             return services;
