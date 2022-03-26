@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLProcessor.Client", "XMLProcessor.Client\XMLProcessor.Client.csproj", "{682E8387-6C74-4BC5-B640-C646CFE11B5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLProcessor.Client", "XMLProcessor.Client\XMLProcessor.Client.csproj", "{682E8387-6C74-4BC5-B640-C646CFE11B5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLProcessor.Server.Domain", "XMLProcessor.Server.Domain\XMLProcessor.Server.Domain.csproj", "{EDA62F35-D601-4E44-BEAD-97E86566FC53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLProcessor.Server.Domain", "XMLProcessor.Server.Domain\XMLProcessor.Server.Domain.csproj", "{EDA62F35-D601-4E44-BEAD-97E86566FC53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLProcessor.Server.Application", "XMLProcessor.Server.Application\XMLProcessor.Server.Application.csproj", "{ECD8CD39-FF08-492F-81D9-015C3FE57A80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLProcessor.Server.Application", "XMLProcessor.Server.Application\XMLProcessor.Server.Application.csproj", "{ECD8CD39-FF08-492F-81D9-015C3FE57A80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLProcessor.Server.Infrastructure", "XMLProcessor.Server.Infrastructure\XMLProcessor.Server.Infrastructure.csproj", "{4F96F7F8-7B3C-4D46-BD8E-DB7CC1D490F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLProcessor.Server.Infrastructure", "XMLProcessor.Server.Infrastructure\XMLProcessor.Server.Infrastructure.csproj", "{4F96F7F8-7B3C-4D46-BD8E-DB7CC1D490F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLProcessor.Server.API", "XMLProcessor.Server.API\XMLProcessor.Server.API.csproj", "{7659FECC-427D-413E-9958-E87F1336D19A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLProcessor.Server.API", "XMLProcessor.Server.API\XMLProcessor.Server.API.csproj", "{7659FECC-427D-413E-9958-E87F1336D19A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{B2A72BED-DB56-478F-83B7-AFF6EDF61E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{F036DE81-F085-4D49-81E2-AE69DF8F4AF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{682E8387-6C74-4BC5-B640-C646CFE11B5A} = {B2A72BED-DB56-478F-83B7-AFF6EDF61E97}
+		{EDA62F35-D601-4E44-BEAD-97E86566FC53} = {F036DE81-F085-4D49-81E2-AE69DF8F4AF6}
+		{ECD8CD39-FF08-492F-81D9-015C3FE57A80} = {F036DE81-F085-4D49-81E2-AE69DF8F4AF6}
+		{4F96F7F8-7B3C-4D46-BD8E-DB7CC1D490F3} = {F036DE81-F085-4D49-81E2-AE69DF8F4AF6}
+		{7659FECC-427D-413E-9958-E87F1336D19A} = {F036DE81-F085-4D49-81E2-AE69DF8F4AF6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6444444B-0AFF-44E8-976F-625DB00AA313}
