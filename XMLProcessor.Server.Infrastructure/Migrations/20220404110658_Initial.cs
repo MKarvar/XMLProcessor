@@ -26,9 +26,9 @@ namespace XMLProcessor.Server.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    NodeId = table.Column<int>(type: "int", nullable: true),
                     DuplicateWord = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RepetitionCount = table.Column<int>(type: "int", nullable: false),
-                    NodeId = table.Column<int>(type: "int", nullable: true)
+                    RepetitionCount = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

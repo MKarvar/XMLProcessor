@@ -1,8 +1,13 @@
 ﻿
 namespace XMLProcessor.Server.Domain.Entities
 {
-    public abstract class BaseEntity
+   
+    public abstract class BaseEntity<TKey> : IEntity
     {
-        public int Id { get; set; }
+        public TKey Id { get; set; }
+    }
+
+    public abstract class BaseEntity : BaseEntity<int>
+    {
     }
 }

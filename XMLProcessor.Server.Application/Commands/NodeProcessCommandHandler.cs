@@ -6,17 +6,16 @@ using System.Collections.Generic;
 using System;
 using XMLProcessor.Server.Domain.Entities;
 using XMLProcessor.Server.Application.Exceptions;
-using XMLProcessor.Server.Application.Interfaces;
+using XMLProcessor.Server.Application.Contracts;
 
 namespace XMLProcessor.Server.Application.Commands
 {
     public class NodeProcessCommandHandler : AsyncRequestHandler<NodeProcessCommand>
     {
-        private readonly IApplicationDbContext _context;
-        public NodeProcessCommandHandler(IApplicationDbContext context)
-        {
-            _context = context;
-        }
+        private readonly INodeRepository _nodeRepository;
+
+        public NodeProcessCommandHandler(INodeRepository nodeRepository) =>
+           _nodeRepository = nodeRepository ?? throw new ArgumentNullException(nameof(nodeRepository));
         protected override async Task<int> Handle(NodeProcessCommand command, CancellationToken cancellationToken)
         {
             try
@@ -25,8 +24,8 @@ namespace XMLProcessor.Server.Application.Commands
                 node.Name = command.NodeName;
                 node.Content = command.Content;
                 node.ProcessResults = Processor(command.Content);
-                _context.Nodes.Add(node);
-                await _context.SaveChangesAsync();
+                await _nodeRepository.AddAsync(node, cancellationToken);
+                await _nodeRepository.UnitOfWork.SaveChangesAsync();
                 return node.Id;
             }
             catch (Exception ex)

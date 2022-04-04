@@ -1,8 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using XMLProcessor.Server.Application.Interfaces;
-using XMLProcessor.Server.Infrastructure.Context;
+using System.Reflection;
+using XMLProcessor.Server.Application.Contracts;
+using XMLProcessor.Server.Infrastructure.Context.EF;
+using XMLProcessor.Server.Infrastructure.Context.EF.Repositories;
 
 namespace XMLProcessor.Server.Infrastructure
 {
@@ -10,12 +13,12 @@ namespace XMLProcessor.Server.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddTransient<INodeRepository, NodeRepository>();
+            services.AddDbContext<NodeProcessorDbContext>(options =>
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection"),
-                    b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
-
-            services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
+                    b => b.MigrationsAssembly(typeof(NodeProcessorDbContext).Assembly.FullName)));
             return services;
         }
     }

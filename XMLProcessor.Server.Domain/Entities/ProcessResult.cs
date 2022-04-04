@@ -6,6 +6,5 @@ namespace XMLProcessor.Server.Domain.Entities
         public virtual Node Node { get; set; }
         public string DuplicateWord { get; set; }
         public int RepetitionCount { get; set; }
-
     }
 }
