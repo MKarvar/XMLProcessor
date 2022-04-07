@@ -27,4 +27,10 @@
     <ProjectReference Include="..\XMLProcessor.Server.Infrastructure\XMLProcessor.Server.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Comments.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

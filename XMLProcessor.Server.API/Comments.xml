@@ -1,18 +1,18 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <doc>
   <assembly>
     <name>XMLProcessor.Server.API</name>
   </assembly>
 
-   <members>
-  <member name="M:XMLProcessor.Server.API.Controllers.v1.XMLProcessController.Process(XMLProcessor.Server.Application.Commands.NodeProcessCommand)">
-            <summary>
-            Process given node
-            </summary>
-            <param name="command">
-		<example>TestNode</example>
-	    </param>
-            <returns></returns>
+  <members>
+    <member name="M:XMLProcessor.Server.API.Controllers.v1.XMLProcessController.Process(XMLProcessor.Server.Application.Commands.NodeProcessCommand)">
+      <summary>
+        Process given node
+      </summary>
+      <param name="command">
+        <example>TestNode</example>
+      </param>
+      <returns></returns>
     </member>
     <member name="P:XMLProcessor.Server.Application.Commands.NodeProcessCommand.NodeName">
       <example>TestNode</example>
